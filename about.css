@@ -1,0 +1,86 @@
+#about {
+  visibility: hidden;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  animation-name: aboutSlideIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.top-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-identfier {
+  text-align: left;
+  width: 90vw;
+}
+
+.about-identfier h6 {
+  font-size: 0.5rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.about-title {
+  text-align: center;
+}
+
+.about-title h2 {
+  margin: 0px;
+}
+
+.bottom-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.design-text {
+  display: flex;
+}
+
+.design-bar {
+  transform: scaleY(1);
+  border: solid var(--css-color);
+  background-color: var(--css-color);
+  margin-right: 10px;
+}
+
+.build-text {
+  display: flex;
+}
+
+.build-bar {
+  transform: scaleY(1);
+  border: solid var(--js-color);
+  background-color: var(--js-color);
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.deploy-text {
+  display: flex;
+}
+
+.deploy-bar {
+  transform: scaleY(1);
+  border: solid var(--html-color);
+  background-color: var(--html-color);
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.break {
+  width: 100%;
+  height: 0.1px;
+  transform: scaleX(1);
+  background-color: black;
+}
