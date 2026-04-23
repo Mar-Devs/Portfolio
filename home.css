@@ -105,6 +105,8 @@ body {
 .glass-icon {
   height: 15rem;
   align-self: flex-end;
+  animation-name: headerSlideIn;
+  animation-duration: 1s;
 }
 
 .home-body button {

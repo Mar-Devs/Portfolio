@@ -14,7 +14,7 @@ function showGlassIcon() {
   setTimeout(() => {
     const glassIcon = document.querySelector(".glass-icon");
     glassIcon.style.visibility = "visible";
-  }, 0);
+  }, 1500);
 }
 
 function showHeader() {

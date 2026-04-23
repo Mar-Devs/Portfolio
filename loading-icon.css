@@ -45,3 +45,30 @@ body {
   font-size: 5rem;
 }
 
+.mobile-nav-bar {
+  width: 60%;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  position: absolute;
+  background-color: white;
+  box-shadow: -2px -1px 1px lightgray;
+}
+
+.mobile-nav-bar ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 0;
+  width: 100%;
+}
+
+.mobile-nav-bar a {
+  text-decoration: none;
+  color: black;
+}
+
+.mobile-nav-bar li {
+  list-style-type: none;
+  border-bottom: solid 1px black;
+}

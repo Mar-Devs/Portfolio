@@ -1,18 +1,25 @@
 function showAbout() {
   const about = document.querySelector("#about");
-  about.style.display = "flex";
+  about.style.visibility = "visible";
 
   const style = document.createElement("style");
   document.head.appendChild(style);
   style.innerHTML = `
-    @keyframe aboutSlideIn {
+    @keyframes aboutSlideIn {
     0%{
-    transform: translateX(-10000px)
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-100px)
     }
     100%{
-    transform: translateX(0px)}
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0px)
+    }
     }
     `;
 }
 
-showAbout();
+setTimeout(() => {
+  showAbout();
+}, 9000);
