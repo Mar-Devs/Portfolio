@@ -3,6 +3,10 @@ function showLoader() {
   icon.style.display = "none";
 }
 
+setTimeout(() => {
+  showLoader();
+}, 1200);
+
 function bodyCSS() {
   const body = document.body;
   body.style.justifyContent = "flex-start";
@@ -201,6 +205,26 @@ function execute() {
   show(".arrow-down-icon");
   show(".thought-bubble-text");
 }
+
+function mobileNavBar() {
+  const navBar = document.querySelector(".mobile-nav-bar");
+  const el1 = document.querySelector(".about-mobile");
+  const openIcon = document.querySelector(".menu-icon");
+  const closeIcon = document.querySelector(".close-icon");
+
+  el1.addEventListener("click", () => {
+    navBar.style.display = "none";
+  });
+  openIcon.addEventListener("click", () => {
+    navBar.style.display = "block";
+  });
+
+  closeIcon.addEventListener("click", () => {
+    navBar.style.display = "none";
+  });
+}
+
+mobileNavBar();
 
 setTimeout(() => {
   execute();

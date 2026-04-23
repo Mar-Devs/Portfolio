@@ -263,7 +263,7 @@ body {
 
 .thought-bubble-text {
   visibility: hidden;
-  z-index: 999;
+  z-index: 10;
   width: 10ch;
   font-size: 0.5rem;
   font-weight: 700;

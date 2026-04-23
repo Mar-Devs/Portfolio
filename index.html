@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="home.css" />
     <link rel="stylesheet" href="loading-icon.css" />
-    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="about.css" />
+      <link rel="icon" type="image/x-icon" href="assests\icons\person_pin_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg">
     <title>Protfolio</title>
   </head>
   <body>
@@ -37,10 +38,16 @@
     <section id="home">
       <div class="mobile-nav-bar">
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#lets-talk">Let's Talk</a></li>
+          <li>
+            <img class="close-icon"
+              src="assests\icons\close_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
+              alt="close"
+            />
+          </li>
+          <li><a class="about-mobile" href="#about">About</a></li>
+          <li><a class="about-mobile" href="#projects">Projects</a></li>
+          <li><a class="about-mobile" href="#services">Services</a></li>
+          <li><a class="about-mobile" href="#lets-talk">Let's Talk</a></li>
         </ul>
       </div>
       <div class="home-body">
@@ -51,22 +58,57 @@
           </div>
           <p class="web-dev">Front-End Web Developer</p>
           <div class="typing-animation">
-            <p>I <span class="design">design</span>, <span class="build">build</span>, and <span class="deploy">deploy</span>.</p>
+            <p>
+              I <span class="design">design</span>,
+              <span class="build">build</span>, and
+              <span class="deploy">deploy</span>.
+            </p>
           </div>
         </div>
         <button>Let's Talk!</button>
       </div>
       <div class="glass-animation">
-        <a><img class="arrow-down-icon" id="thought" src="assests\icons\south_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="arrow-down" /></a>
-        <p class="thought-bubble-text"  id="thought">
+        <a href=""#about
+          ><img
+            class="arrow-down-icon"
+            id="thought"
+            src="assests\icons\south_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
+            alt="arrow-down"
+        /></a>
+        <p class="thought-bubble-text" id="thought">
           ...is the glass half-full or half-empty?
         </p>
-        <img class="thought-bubble-icon" id="thought" src="assests\icons\chat-bubble-svgrepo-com.svg" alt="thought-bubble"/>
-         <img class="css-icon" src="assests\icons\css-3-svgrepo-com.svg" alt="css" />
-         <img class="js-icon" src="assests\icons\javascript-logo-svgrepo-com.svg" alt="java-script" />
-         <img class="html-icon" src="assests\icons\html-5-svgrepo-com.svg" alt="html" />
-         <img class="react-icon" src="assests\icons\react-svgrepo-com.svg" alt="react" />
-        <img class="glass-icon" src="assests\icons\empty-glass-drink-svgrepo-com.svg" alt="glass" />
+        <img
+          class="thought-bubble-icon"
+          id="thought"
+          src="assests\icons\chat-bubble-svgrepo-com.svg"
+          alt="thought-bubble"
+        />
+        <img
+          class="css-icon"
+          src="assests\icons\css-3-svgrepo-com.svg"
+          alt="css"
+        />
+        <img
+          class="js-icon"
+          src="assests\icons\javascript-logo-svgrepo-com.svg"
+          alt="java-script"
+        />
+        <img
+          class="html-icon"
+          src="assests\icons\html-5-svgrepo-com.svg"
+          alt="html"
+        />
+        <img
+          class="react-icon"
+          src="assests\icons\react-svgrepo-com.svg"
+          alt="react"
+        />
+        <img
+          class="glass-icon"
+          src="assests\icons\empty-glass-drink-svgrepo-com.svg"
+          alt="glass"
+        />
       </div>
     </section>
 
@@ -79,10 +121,18 @@
       </div>
       <div class="bottom-about">
         <div class="bottome-left">
-          <div class="p1"><p>I'm a front-end web developer, with a passion for building interfaces that are clean, responsive, 
-            and a little playful.</p>
+          <div class="p1">
+            <p>
+              I'm a front-end web developer, with a passion for building
+              interfaces that are clean, responsive, and a little playful.
+            </p>
           </div>
-          <div class="p2"><p>I'm currently open to my <b>first client projects.</b> If you need a website built I'd love to hear about it.</p></div>
+          <div class="p2">
+            <p>
+              I'm currently open to my <b>first client projects.</b> If you need
+              a website built I'd love to hear about it.
+            </p>
+          </div>
           <div class="bar-div"></div>
         </div>
         <div class="bottom-right">
@@ -97,14 +147,20 @@
             <div class="build-bar"></div>
             <div class="build-information">
               <h5>Build</h5>
-              <p>Writing clean, maintainable code. I care about how things look under the hood, not just how they look on screen.</p>
+              <p>
+                Writing clean, maintainable code. I care about how things look
+                under the hood, not just how they look on screen.
+              </p>
             </div>
           </div>
           <div class="deploy-text">
             <div class="deploy-bar"></div>
             <div class="deploy-information">
               <h5>Deploy</h5>
-              <p>Getting projects across the finish line; built, tested, and live.</p>
+              <p>
+                Getting projects across the finish line; built, tested, and
+                live.
+              </p>
             </div>
           </div>
         </div>

@@ -43,6 +43,7 @@ body {
   animation-name: bounceIn;
   animation-duration: 1s;
   font-size: 5rem;
+  display: block;
 }
 
 .mobile-nav-bar {
@@ -53,14 +54,16 @@ body {
   position: absolute;
   background-color: white;
   box-shadow: -2px -1px 1px lightgray;
+  z-index: 999;
+  overflow: hidden;
+  display: none;
 }
 
 .mobile-nav-bar ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 0;
-  width: 100%;
+  margin: 0px;
 }
 
 .mobile-nav-bar a {
@@ -70,5 +73,26 @@ body {
 
 .mobile-nav-bar li {
   list-style-type: none;
-  border-bottom: solid 1px black;
+  border-bottom: solid 0.5px black;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+}
+
+.mobile-nav-bar li a {
+  text-align: center;
+}
+
+.mobile-nav-bar li:first-child {
+  margin-left: auto;
+  padding: 0px;
+  align-self: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem 0px;
+  border-bottom: none;
+}
+
+.close-icon {
+  height: 2.5rem;
 }
